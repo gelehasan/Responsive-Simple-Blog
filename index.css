@@ -1,0 +1,332 @@
+*{
+     box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+   
+    
+}
+
+
+/* Header */
+header{
+ 
+    background-color: #1b1b32;;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    /* border: 2px dashed yellow; */
+    justify-content: space-between;
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/* logo */
+.logo{
+    /* border: 1px solid red; */
+    text-align: left;
+}
+
+.logo p{
+    margin: 0;
+    font-size: .7rem;
+    color: white;
+}
+.logo  h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+
+/* Nav links  */
+
+.nav-links ul li{
+    /* border: 1px solid red; */
+     list-style: none;
+    
+     /* margin: 0 0 0 3em; */
+  
+
+
+ 
+ }
+.nav-links ul{
+    display: flex;
+    /* border: 1px solid yellow; */
+    list-style: none;
+    
+    padding: 0;
+    
+ 
+  
+   
+}
+.nav-links ul li a{
+    
+    text-decoration: none;
+  transition: 0.5s;
+  /* padding: 0 2em; */
+  margin-left: 3em;   
+    
+  color: white;
+  font-size: 1.2em;
+}
+
+.current{
+    border-bottom: 2px solid #717171;
+}
+
+
+
+/* Section one */
+
+
+/* Typograph */
+
+h1,h3{
+  color: #143774;
+}
+h4{
+    color: #1792D2;
+}
+h6{
+    color: #707070;
+}
+
+
+
+/* container */
+.container{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    max-width: 980px;
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: space-between;
+
+}
+
+
+/* col1 */
+.col1{
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+/* Imgs */
+.col1 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+
+}
+
+#firstimg{
+    object-position: top bottom;
+
+
+}
+
+#lastimg{
+    object-position: left;
+}
+
+
+/*  */
+
+
+.col1-child{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.col1-logo{
+    width: 30%;
+    /* border: 1px solid red; */
+
+    padding-top: 1.7em;
+}
+
+.col1-logo img{
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.col1-content{
+    /* border: 2px solid blue; */
+    width: 70%;
+
+    padding: 0 .5em;
+    padding-bottom: 0;
+
+
+}
+
+
+
+
+/* col2 */
+
+.col2{
+    width: 25%;
+  
+    text-align: center;
+ 
+   
+}
+
+.part2{
+    margin-top: 3em;
+}
+
+.col2 img{
+    width: 90%;
+    height: 90px;
+    object-fit: cover;
+    
+}
+
+
+.col2-child{
+    border: 10px solid #EBEBEB;
+    
+    padding: 0 0.5em;
+}
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: #143774;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+   
+ 
+   
+}
+
+
+footer h2{
+    margin-bottom: 0;
+}
+
+
+/* Opening and closing bar */
+
+.fa-solid{
+    position: fixed;
+    top: -10%;
+    right: 0;
+    font-size: 2.5rem;
+
+    
+}
+
+
+.col2 p{
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* Media query */
+
+
+
+@media(max-width:700px){
+    /* nav{
+        width: 100%;
+    } */
+
+ /* img */
+ .erenimg{
+    object-position: left;
+ }
+ 
+ #lastimg{
+    object-position: center;
+ }
+
+    
+    .fa-bars.active{
+        top: 0%;
+        
+    }
+    .fa-xmark.active{
+        top:0%;
+    }
+
+
+    .logo{
+        /* border: 1px solid red; */
+        width: 100%;
+        position: fixed;
+        background-color: #1b1b32;;
+      
+    }
+
+    nav{
+        flex-direction: column;
+       /* width: 100%; */
+        
+    }
+    .nav-links{
+        /* border: 1px solid red; */
+        width: 100%;
+       text-align: center;
+       position: fixed;
+       border-top: 1px solid gray;
+      
+       margin-top: 2.52em;
+       display: block;
+       top: -55%;
+       background-color: #1b1b32;;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    /* border: 1px solid red; */
+    justify-content: center;
+    }
+    .nav-links li{
+        margin-top: 1em;
+      
+    }
+
+
+    .container{
+        flex-direction: column;
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+        margin-top: 5em;
+    }
+    .col2 img{
+        height: 150px;
+    }
+}
+
